@@ -15,7 +15,7 @@
     list-style: none;
     text-decoration: none;
     /* temp */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* general */
@@ -39,6 +39,119 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+/* general */
+
+
+body {
+
+    background-color: #282828;
+    color: white;
+
+}
+
+
+
+.container {
+
+    background-color: #282828;
+    height: 100vh;
+
+    /* SOLUZIONE FLEX */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ***** UTILITIES ***** */
+
+/* flex  */
+
+.d-flex {
+
+    display: flex;
+}
+
+.column {
+
+    flex-direction: column;
+}
+
+
+/* color bg and text */
+
+
+
+/* content */
+
+
+.upper-content {
+
+    background-color: darkblue;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+
+}
+
+/* sidebar */
+
+.sidebar {
+
+
+    background-color: black;
+    flex: 0 0 230px;
+    /*asse row*/
+}
+
+/* main */
+
+main {
+
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 100px 20px 0 20px;
+}
+
+/* header */
+
+.header {
+
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 230px;
+    width: calc(100% - 230px);
+    background-color: black;
+    opacity: 0.5;
+    z-index: 3000;
+    text-align: right;
+}
+
+/* nav */
+
+
+
+/* recently */
+
+
+
+/* playbar */
+
+footer {
+
+    background-color: #282828;
+    flex: 0 0 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ************* MEDIA QUERY START ************* */
 
