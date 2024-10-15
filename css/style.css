@@ -200,8 +200,34 @@ body {
 
 
     background-color: black;
-    flex: 0 0 230px;
     /*asse row*/
+    flex: 0 0 230px;
+    padding: 15px;
+
+
+}
+
+.logo {
+
+    width: 60%;
+}
+
+.side-nav-top a,
+.side-nav-bot li {
+
+    padding: 10px;
+    color: grey;
+}
+
+
+
+.side-nav-bot h5 {
+
+    text-transform: uppercase;
+    display: inline-block;
+    color: white;
+
+
 }
 
 /* main */
@@ -250,17 +276,17 @@ main {
 
 /* nav */
 
-nav {
+.main-nav {
 
     height: 10vh;
 }
 
-nav ul {
+.main-nav ul {
 
     gap: 36px;
 }
 
-nav a {
+.main-nav a {
 
     color: grey;
     text-transform: uppercase;
@@ -279,6 +305,7 @@ nav>ul>li>::after {
 
 }
 
+nav li:hover,
 nav a:hover {
 
     color: white;
@@ -286,7 +313,7 @@ nav a:hover {
 }
 
 
-nav>ul>li>:hover:after {
+.main-nav>ul>li>:hover:after {
 
     content: "";
     display: block;
