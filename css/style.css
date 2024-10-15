@@ -151,6 +151,11 @@ body {
     padding-bottom: 30px;
 }
 
+.pd-bot-50 {
+
+    padding-bottom: 50px;
+}
+
 
 
 /* color bg and text */
@@ -268,7 +273,13 @@ nav>ul>li>::after {
 
 /* recently */
 
-.recently {}
+.recently {
+
+    gap: 15px;
+
+}
+
+
 
 .card {
 
@@ -282,6 +293,20 @@ nav>ul>li>::after {
     text-align: center;
 }
 
+/* made for you */
+
+/* popular */
+
+.popular .img-card {
+
+    border-radius: 50%;
+}
+
+.popular img {
+
+    border-radius: 50%;
+
+}
 
 /* playbar */
 
@@ -335,10 +360,7 @@ footer {
 
 @media screen and (max-width:639px) {
 
-    nav>ul {
 
-        font-size: 1.3em;
-    }
 
     .card {
 
