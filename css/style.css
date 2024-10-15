@@ -136,6 +136,11 @@ body {
 
 }
 
+.pd-top-20 {
+
+    padding-top: 20px;
+}
+
 .pd-bot-10 {
 
     padding-bottom: 10px;
@@ -156,8 +161,7 @@ body {
     padding-bottom: 50px;
 }
 
-
-
+.mg-bot-30
 /* color bg and text */
 
 .grey-text {
@@ -221,10 +225,7 @@ main {
     background-color: black;
     opacity: 0.8;
     z-index: 3000;
-    padding-right: 5px;
-
-
-
+    padding-right: 25px;
 
 
 }
@@ -239,11 +240,20 @@ main {
     border-radius: 50px;
     font-size: 0.7em;
 
+}
 
+.header a:hover {
+
+    font-size: 0.8em;
 
 }
 
 /* nav */
+
+nav {
+
+    height: 10vh;
+}
 
 nav ul {
 
@@ -266,6 +276,25 @@ nav>ul>li>::after {
     border: 2px solid green;
     margin: 2px auto;
     display: none;
+
+}
+
+nav a:hover {
+
+    color: white;
+
+}
+
+
+nav>ul>li>:hover:after {
+
+    content: "";
+    display: block;
+    width: 25px;
+    border: 2px solid green;
+    margin: 2px auto;
+    display: block;
+
 
 }
 
@@ -329,20 +358,22 @@ footer {
 
 /* ************* MEDIA QUERY START ************* */
 
-/* large */
 
-@media screen and (max-width:1440px) {}
 
 /* medium */
 
 
 @media screen and (max-width:878px) {
 
+    /* nav */
+
     nav>ul {
 
         max-width: 100%;
         font-size: 1.3em;
     }
+
+    /* card */
 
 
 
@@ -360,6 +391,8 @@ footer {
 
 @media screen and (max-width:639px) {
 
+    /* card */
+
 
 
     .card {
@@ -370,6 +403,8 @@ footer {
 
 
 /* x-small */
+
+/* *****after side bar***** */
 
 
 @media screen and (max-width:552px) {}
