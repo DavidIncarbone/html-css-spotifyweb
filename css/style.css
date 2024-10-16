@@ -54,6 +54,11 @@ a {
     color: white;
 }
 
+i {
+
+    display: inline-block;
+}
+
 
 /* fonts */
 
@@ -511,4 +516,20 @@ footer {
 /* *****after side bar***** */
 
 
-@media screen and (max-width:552px) {}
+@media screen and (max-width:552px) {
+
+    .sidebar {
+
+        flex: 1 1 auto;
+    }
+
+    .d-none {
+
+        display: none;
+    }
+
+
+
+
+
+}
