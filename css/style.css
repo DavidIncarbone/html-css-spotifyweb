@@ -427,7 +427,7 @@ main {
 
 .header a:hover {
 
-    font-size: 0.8em;
+    transform: scale(1.2);
 
 
 
@@ -544,11 +544,14 @@ nav span:hover {
 
 
 
+
+
 .text-card {
 
     width: 100%;
-
     text-align: center;
+    white-space: wrap;
+    text-overflow: ellipsis;
 }
 
 .text-card>div {
@@ -583,6 +586,7 @@ footer {
 
 }
 
+
 footer i {
 
     color: white;
@@ -593,44 +597,29 @@ footer i {
 .footer-left,
 .footer-right {
 
-    width: 30vw;
-
+    width: 30vh;
 }
 
 .track-info {
 
-    width: 130px;
+    width: 150px;
     padding: 30px 15px 30px 15px;
 }
 
-.track-img {
 
-    width: 150px;
-}
-
-.track-text {
-
-    width: 59%;
-
-}
+.track-text {}
 
 .sub-track {
 
-    font-size: 0.4em;
+    font-size: 0.6em;
 }
 
 .track-text h5 {
 
-    font-size: 0.7em;
+    font-size: 1.1em;
 }
 
-.track-action {
 
-
-    width: 10vw;
-
-
-}
 
 .track-action i {
 
@@ -645,7 +634,7 @@ footer i {
 
 .f-center-actions {
 
-    width: 25vw;
+    width: 15vw;
     padding-bottom: 15px;
 }
 
@@ -656,7 +645,11 @@ footer i {
 
 .f-center-progress {
 
-    width: 50vwpx;
+    width: 30vw;
+}
+
+.f-center-progress input[type="range"] {
+    width: 400px;
 }
 
 .footer-right {
@@ -667,9 +660,15 @@ footer i {
 .f-right-actions {
 
     width: 20vw;
+    justify-content: flex-end;
+    padding-right: 30px;
 
 
 
+}
+
+.f-right-actions input[type="range"] {
+    width: 50px;
 }
 
 
@@ -819,10 +818,7 @@ footer i {
         justify-content: center;
     }
 
-    .footer-right {
 
-        justify-content: flex-start;
-    }
 
 
 
