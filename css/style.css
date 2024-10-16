@@ -51,7 +51,7 @@ a {
 
     display: inline-block;
     text-decoration: none;
-    color: grey;
+    color: white;
 }
 
 
@@ -207,6 +207,11 @@ body {
 
 }
 
+.sidebar a {
+
+    color: grey;
+}
+
 .logo {
 
     width: 60%;
@@ -217,7 +222,7 @@ body {
 .side-nav-bot li {
 
     padding: 10px;
-    color: grey;
+
 
 }
 
@@ -249,8 +254,8 @@ body {
 .side-nav-bot span {
 
     padding-left: 5px;
-    color: grey;
 }
+
 
 .side-nav-bot i {
 
