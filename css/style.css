@@ -573,19 +573,19 @@ footer i {
 .footer-left,
 .footer-right {
 
-    width: 230px;
+    width: 30vw;
 
 }
 
 .track-info {
 
-    width: 60%;
+    width: 130px;
     padding: 30px 15px 30px 15px;
 }
 
 .track-img {
 
-    width: 40%;
+    width: 150px;
 }
 
 .track-text {
@@ -606,7 +606,9 @@ footer i {
 
 .track-action {
 
-    padding-right: 15px;
+
+    width: 10vw;
+
 
 }
 
@@ -618,12 +620,12 @@ footer i {
 
 .footer-center {
 
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 }
 
 .f-center-actions {
 
-    width: 150px;
+    width: 25vw;
     padding-bottom: 15px;
 }
 
@@ -634,12 +636,18 @@ footer i {
 
 .f-center-progress {
 
-    width: 300px;
+    width: 50vwpx;
+}
+
+.footer-right {
+
+    justify-content: flex-end;
 }
 
 .f-right-actions {
 
-    width: 100%;
+    width: 20vw;
+
 
 
 }
@@ -768,6 +776,9 @@ footer i {
 
         display: flex;
         justify-content: center;
+        background-color: grey;
+        position: relative;
+        z-index: 1000;
     }
 
     /* nav */
@@ -778,6 +789,19 @@ footer i {
 
         gap: 20px 10px;
 
+    }
+
+    /* footer */
+
+    .track-action {
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-right {
+
+        justify-content: flex-start;
     }
 
 
