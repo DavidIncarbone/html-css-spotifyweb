@@ -88,6 +88,18 @@ body {
 
 /* ***** UTILITIES ***** */
 
+/* display */
+
+.d-block {
+
+    display: block;
+}
+
+.d-none {
+
+    display: none;
+}
+
 /* flex  */
 
 .d-flex {
@@ -141,6 +153,11 @@ body {
 
 }
 
+.pd-top-10 {
+
+    padding-top: 10px;
+}
+
 .pd-top-20 {
 
     padding-top: 20px;
@@ -186,6 +203,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 
@@ -205,12 +223,20 @@ body {
 
 
     background-color: black;
-    /*asse row*/
     flex: 0 0 230px;
     padding: 15px;
-
+    min-height: 400px;
+    overflow: hidden;
+    font-size: 0.6em;
 
 }
+
+.sidebar-top {
+
+    height: calc(100% - 70px);
+
+}
+
 
 .sidebar a {
 
@@ -226,14 +252,14 @@ body {
 .side-nav-top a,
 .side-nav-bot li {
 
-    padding: 10px;
+    padding: 5px;
 
 
 }
 
 .side-nav-top img {
 
-    width: 30px;
+    width: 20px;
     vertical-align: middle;
     padding-right: 5px;
 }
@@ -242,9 +268,6 @@ body {
 
     display: none;
 }
-
-
-
 
 
 .side-nav-bot h5 {
@@ -265,10 +288,62 @@ body {
 .side-nav-bot i {
 
     background-color: var(--color-lightgrey);
-    padding: 10px;
+    padding: 5px;
     font-size: 1.5em;
     color: black;
 }
+
+.sidebar-bot {
+
+    height: 70px;
+    padding-top: 15px;
+}
+
+hr {
+
+    width: 90%;
+    border: 1px solid grey;
+    margin-top: 10px;
+
+
+}
+
+.download img {
+
+    width: 10px;
+    vertical-align: middle;
+
+}
+
+.profile div {
+
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 50%;
+
+
+}
+
+.profile img {
+
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+
+}
+
+.profile b {
+
+    font-size: 1.3em;
+    padding-left: 10px;
+    color: white;
+}
+
+
+
+
 
 
 
@@ -314,6 +389,9 @@ main {
 
     font-size: 0.8em;
 
+
+
+
 }
 
 /* nav */
@@ -345,6 +423,7 @@ nav>ul>li>::after {
     margin: 2px auto;
     display: none;
 
+
 }
 
 nav li:hover,
@@ -375,6 +454,7 @@ nav span:hover {
 .recently {
 
     gap: 15px;
+
 
 }
 
@@ -435,14 +515,12 @@ nav span:hover {
 
 /* popular */
 
-.popular .img-card {
 
-    border-radius: 50%;
-}
 
 .popular img {
 
     border-radius: 50%;
+    overflow: hidden;
 
 }
 
@@ -450,8 +528,11 @@ nav span:hover {
 
 footer {
 
-    background-color: #282828;
+    background-color: var(--color-darkgrey);
     flex: 0 0 100px;
+    position: relative;
+    z-index: 5000;
+
 }
 
 
@@ -468,13 +549,32 @@ footer {
 /* ************* MEDIA QUERY START ************* */
 
 
+/* large */
+
+
+
+
+
+
 
 /* medium */
+
+@media screen and (max-width:1440px) {}
+
+
 
 
 @media screen and (max-width:878px) {
 
     /* nav */
+
+    .main-nav {
+
+        margin-bottom: 50px;
+    }
+
+
+
 
     nav>ul {
 
@@ -490,7 +590,10 @@ footer {
 
         width: calc((100% - 75px) / 4);
     }
+
 }
+
+
 
 
 
@@ -518,15 +621,55 @@ footer {
 
 @media screen and (max-width:552px) {
 
-    .sidebar {
+    main {
 
-        flex: 1 1 auto;
+        display: flex;
     }
 
-    .d-none {
+    .header {
+
+        width: calc(100% - 50px);
+        left: 50px;
+
+
+
+    }
+
+    /* sidebar */
+
+    .sidebar {
+
+        flex: 0 0 50px;
+    }
+
+    .d-none-552 {
 
         display: none;
     }
+
+    .d-block-552 {
+
+        display: block;
+        color: white;
+    }
+
+    .download {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    /* nav */
+
+
+
+    .main-nav ul {
+
+        gap: 20px 10px;
+
+    }
+
+
 
 
 
