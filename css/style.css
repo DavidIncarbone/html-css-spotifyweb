@@ -40,6 +40,16 @@ body {
 
 }
 
+h2 {
+
+    font-size: 1.2em;
+}
+
+h3 {
+
+    font-size: 0.8em;
+}
+
 
 
 img {
@@ -146,6 +156,11 @@ body {
     gap: 5px;
 }
 
+.gap-10 {
+
+    gap: 10px;
+}
+
 .gap-15 {
 
     gap: 15px;
@@ -227,7 +242,7 @@ body {
     padding: 15px;
     min-height: 400px;
     overflow: hidden;
-    font-size: 0.6em;
+    font-size: 1em;
 
 }
 
@@ -267,6 +282,11 @@ body {
 .side-nav-top ul li:first-child {
 
     display: none;
+}
+
+.side-nav-bot {
+
+    scroll-behavior: ;
 }
 
 
@@ -511,6 +531,12 @@ nav span:hover {
     text-align: center;
 }
 
+.text-card>div {
+
+    font-size: 0.5em;
+    color: grey;
+}
+
 /* made for you */
 
 /* popular */
@@ -532,8 +558,93 @@ footer {
     flex: 0 0 100px;
     position: relative;
     z-index: 5000;
+    padding: 10px;
+    font-size: 0.7em;
 
 }
+
+footer i {
+
+    color: white;
+    cursor: pointer;
+
+}
+
+.footer-left,
+.footer-right {
+
+    width: 230px;
+
+}
+
+.track-info {
+
+    width: 60%;
+    padding: 30px 15px 30px 15px;
+}
+
+.track-img {
+
+    width: 40%;
+}
+
+.track-text {
+
+    width: 59%;
+
+}
+
+.sub-track {
+
+    font-size: 0.4em;
+}
+
+.track-text h5 {
+
+    font-size: 0.7em;
+}
+
+.track-action {
+
+    padding-right: 15px;
+
+}
+
+.track-action i {
+
+    color: grey;
+}
+
+
+.footer-center {
+
+    flex: 1 0 auto;
+}
+
+.f-center-actions {
+
+    width: 150px;
+    padding-bottom: 15px;
+}
+
+.fa-circle-play {
+
+    font-size: 2em;
+}
+
+.f-center-progress {
+
+    width: 300px;
+}
+
+.f-right-actions {
+
+    width: 100%;
+
+
+}
+
+
 
 
 
