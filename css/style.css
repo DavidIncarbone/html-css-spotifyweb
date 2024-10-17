@@ -10,11 +10,6 @@
     --color-redcolor: #ca1717;
 }
 
-
-
-
-
-
 /* reset*/
 
 * {
@@ -24,8 +19,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    /* temp */
-    /* border: 1px solid red; */
+
 }
 
 /* general */
@@ -239,13 +233,23 @@ body {
 
     background-color: black;
     flex: 0 0 230px;
-    padding: 15px;
+    padding: 15px 15px 15px 0;
     min-height: 300px;
     overflow: hidden;
-    font-size: 1em;
+
+    font-size: 0.7em;
+
+}
+
+.side-nav-top a {
+
+    border-left: 5px solid black;
+}
 
 
+.side-nav-top a:hover {
 
+    border-left: 5px solid green;
 }
 
 .sidebar-top {
@@ -266,13 +270,23 @@ body {
     height: auto;
 }
 
-.side-nav-top a,
-.side-nav-bot li {
 
-    padding: 5px;
+.side-nav-top a {
+
+
+    padding: 5px 5px 5px 15px;
 
 
 }
+
+.side-nav-bot li,
+.download a {
+
+    padding: 5px 5px 5px 20px;
+
+}
+
+
 
 .side-nav-top img {
 
@@ -288,8 +302,17 @@ body {
 
 .side-nav-bot {
 
-    overflow-y: scroll;
-    overflow: hidden;
+    flex: 1 1 auto;
+    min-height: 0px;
+
+
+}
+
+.side-nav-bot ul {
+
+    flex: 1 1 auto;
+    overflow-y: auto;
+
 }
 
 
@@ -301,6 +324,8 @@ body {
 
 
 }
+
+
 
 .side-nav-bot span {
 
@@ -316,13 +341,19 @@ body {
     color: black;
 }
 
+.side-nav-bot>ul>li:nth-child(2)>a:hover .fa-plus {
+
+    background-color: white;
+}
+
 .sidebar-bot {
 
-    height: 70px;
+    height: 85px;
     padding-top: 15px;
     background-color: black;
     position: relative;
     z-index: 500;
+
 }
 
 hr {
@@ -353,6 +384,8 @@ hr {
     background-color: black;
     position: relative;
     z-index: 500;
+    padding-left: 15px;
+
 }
 
 .profile div {
@@ -362,6 +395,8 @@ hr {
     height: 20px;
     background-color: grey;
     border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
 
 
 }
@@ -372,13 +407,16 @@ hr {
     overflow: hidden;
     vertical-align: middle;
 
+
 }
 
-.profile b {
+.profile span {
 
     font-size: 1.3em;
-    padding-left: 10px;
+    padding-left: 5px;
     color: white;
+    vertical-align: middle;
+
 }
 
 
@@ -438,7 +476,8 @@ main {
 
 .main-nav {
 
-    height: 10vh;
+    margin-bottom: 50px;
+
 }
 
 .main-nav ul {
@@ -454,38 +493,38 @@ main {
 
 }
 
-nav>ul>li>::after {
+.main-nav>ul>li>::after {
 
     content: "";
     display: block;
     width: 25px;
-    border: 2px solid green;
+    height: 3px;
     margin: 2px auto;
-    display: none;
+
+
+
+}
+
+.main-nav>ul>li>:hover:after {
+
+
+    background-color: green;
+
 
 
 }
 
 nav li:hover,
 nav a:hover,
-nav span:hover {
+nav span:hover,
+.track-action i:hover {
 
     color: white;
 
 }
 
 
-.main-nav>ul>li>:hover:after {
 
-    content: "";
-    display: block;
-    width: 25px;
-    border: 2px solid green;
-    margin: 2px auto;
-    display: block;
-
-
-}
 
 
 
@@ -520,9 +559,11 @@ nav span:hover {
 
 }
 
-.img-card:hover .play {
+.img-card:hover .play,
+.play:hover {
 
     display: block;
+    transform: translate(-50%, -50%);
 }
 
 .play {
@@ -537,9 +578,11 @@ nav span:hover {
 
 }
 
+
 .play:hover img {
 
     opacity: 0.2;
+
 }
 
 
@@ -612,6 +655,14 @@ footer i {
 .sub-track {
 
     font-size: 0.6em;
+    color: grey;
+}
+
+.sub-track:hover {
+
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .track-text h5 {
@@ -625,6 +676,8 @@ footer i {
 
     color: grey;
 }
+
+
 
 
 .footer-center {
@@ -643,6 +696,11 @@ footer i {
     font-size: 2em;
 }
 
+.fa-circle-play:hover {
+
+    transform: scale(1.2);
+}
+
 .f-center-progress {
 
     width: 30vw;
@@ -650,6 +708,16 @@ footer i {
 
 .f-center-progress input[type="range"] {
     width: 400px;
+
+
+}
+
+.f-center-progress input[type="range"]:hover,
+
+.f-right-actions input[type="range"]:hover {
+
+    accent-color: greenyellow;
+    cursor: pointer;
 }
 
 .footer-right {
@@ -670,6 +738,8 @@ footer i {
 .f-right-actions input[type="range"] {
     width: 50px;
 }
+
+
 
 
 
@@ -709,6 +779,7 @@ footer i {
     .main-nav {
 
         margin-bottom: 50px;
+        max-width: 100%;
     }
 
 
@@ -742,6 +813,11 @@ footer i {
 @media screen and (max-width:639px) {
 
     /* card */
+
+    .main-nav>ul {
+
+        gap: 28px;
+    }
 
 
 
